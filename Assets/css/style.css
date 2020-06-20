@@ -31,18 +31,19 @@ body {
   .description{
     white-space: pre-wrap;
   }
-  
+
   .time-block{
     background-color:#ffffff;
     font-size: 20px;
     text-align: center;
-    border-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
   }
   
   .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
+    border-top: 1px solid  rgb(199, 242, 245);
   }
   
   .hour {
