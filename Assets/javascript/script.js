@@ -1,6 +1,6 @@
 // variable for moment() method.
 
-var moment =moment();
+// var moment =moment();
 
 // variables for on save button click
 var event;
@@ -10,9 +10,9 @@ var time;
 // Display current day and time at the top of timetable,
 // we import moment() method to format this.
 
-console.log(moment.format("dddd, MMMM Do"));
+console.log(moment().format("dddd, MMMM Do"));
 
-$("#currentDay").text(moment.format("dddd, MMMM Do"));
+$("#currentDay").text(moment().format("dddd, MMMM Do"));
 
 
 // functions
@@ -69,39 +69,39 @@ $(".saveBtn").click(function () {
 
 // renderEvent function can make the user input be displayed in text field 
 function renderEvent() {
-  var saveWords9 = JSON.parse(localStorage.getItem("9:00 am"));
+  var saveEvent_9am = JSON.parse(localStorage.getItem("9:00 am"));
   $("#9").val("");
-  $("#9").val(saveWords9);
+  $("#9").val(saveEvent_9am);
 
-  var saveWords10 = JSON.parse(localStorage.getItem("10:00 am"));
+  var saveEvent_10am = JSON.parse(localStorage.getItem("10:00 am"));
   $("#10").val("");
-  $("#10").val(saveWords10);
+  $("#10").val(saveEvent_10am);
 
-  var saveWords11 = JSON.parse(localStorage.getItem("11:00 am"));
+  var saveEvent_11am = JSON.parse(localStorage.getItem("11:00 am"));
   $("#11").val("");
-  $("#11").val(saveWords11);
+  $("#11").val(saveEvent_11am);
 
-  var saveWords12 = JSON.parse(localStorage.getItem("12:00 pm"));
+  var saveWords12pm = JSON.parse(localStorage.getItem("12:00 pm"));
   $("#12").val("");
-  $("#12").val(saveWords12);
+  $("#12").val(saveWords12pm);
 
-  var saveWords1 = JSON.parse(localStorage.getItem("1:00 pm"));
+  var saveEvent_1pm = JSON.parse(localStorage.getItem("1:00 pm"));
   $("#13").val("");
-  $("#13").val(saveWords1);
+  $("#13").val( saveEvent_1pm);
 
-  var saveWords2 = JSON.parse(localStorage.getItem("2:00 pm"));
+  var saveEvent_2pm = JSON.parse(localStorage.getItem("2:00 pm"));
   $("#14").val("");
-  $("#14").val(saveWords2);
+  $("#14").val(saveEvent_2pm);
 
-  var saveWords3 = JSON.parse(localStorage.getItem("3:00 pm"));
+  var saveEvent_3pm = JSON.parse(localStorage.getItem("3:00 pm"));
   $("#15").val("");
-  $("#15").val(saveWords3);
+  $("#15").val(saveEvent_3pm);
 
-  var saveWords4 = JSON.parse(localStorage.getItem("4:00 pm"));
+  var saveEvent_4pm = JSON.parse(localStorage.getItem("4:00 pm"));
   $("#16").val("");
-  $("#16").val(saveWords4);
+  $("#16").val(saveEvent_4pm);
 
-  var saveWords5 = JSON.parse(localStorage.getItem("5:00 pm"));
+  var saveEvent_5pm = JSON.parse(localStorage.getItem("5:00 pm"));
   $("#17").val("");
-  $("#17").val(saveWords5);
+  $("#17").val(saveEvent_5pm);
 }
