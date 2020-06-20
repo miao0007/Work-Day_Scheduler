@@ -58,7 +58,6 @@ function colorChange() {
 
 // once the save button clicked, the event info with matched time should be stored in localStorage.
 $(".saveBtn").click(function () {
-
   // click button which is directly acted on textarea in same row
   event = $(this).siblings(".input").val();
   console.log(event);
@@ -77,8 +76,7 @@ $(".saveBtn").click(function () {
 
 // renderEvent function can make the user input be displayed in text field
 function renderEvent() {
-
-// need empty content in textarea before load event from info from localStorage
+  // need empty content in textarea before load event from info from localStorage
   var saveEvent_9am = JSON.parse(localStorage.getItem("9:00 am"));
   $("#9").empty();
   $("#9").val(saveEvent_9am);
